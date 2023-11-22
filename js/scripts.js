@@ -96,7 +96,17 @@ function displayFolks(folks) {
     let html = `
       <figure class="${genderClass} ${partyClass}">
         <img src="${URL}${imgID}-${SIZE}.jpeg" >
-        <figCaption>${person.first_name} ${person.last_name}</figCaption>
+        <figCaption>
+          ${person.first_name} ${person.last_name}
+          <br>
+          Title: ${person.title}
+          <br>
+          Birth Date: ${person.date_of_birth}
+          <br>
+          State: ${person.state}
+          <br>
+          Fax: ${person.fax}
+        </figCaption>
       </figure>
     `
 
