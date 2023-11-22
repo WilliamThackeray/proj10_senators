@@ -105,7 +105,7 @@ function displayFolks(folks) {
           <br>
           State: ${person.state}
           <br>
-          Fax: ${person.fax}
+          Phone: ${person.phone}
         </figCaption>
       </figure>
     `
