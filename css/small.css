@@ -1,0 +1,76 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+  --light-green: #71f79fff;
+  --robin-egg-blue: #3dd6d0ff;
+  --keppel: #15b097ff;
+  --caf-noir: #513c2cff;
+  --bistre: #28190eff;
+}
+
+header {
+  text-align: center;
+  background-color: var(--light-green);
+}
+h1 {
+  margin: 0;
+  padding: 2rem;
+}
+nav {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--bistre);
+}
+nav button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem .5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: var(--caf-noir);
+  color: white;
+}
+
+#people {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--caf-noir);
+}
+#people figure {
+  margin: 10px;
+  padding: 0;
+  width: 150px;
+  border: solid 4px black;
+  border-radius: 4px;
+  flex-basis: 100%;
+  justify-content: center;
+}
+#people img {
+  width: 100%;
+}
+#people figCaption {
+  text-align: center;
+}
+
+#people figure.republican {
+  border: solid 4px red;
+  background-color: pink;
+}
+#people figure.democrat {
+  border: solid 4px blue;
+  background-color: lightskyblue;
+}
+#people figure.other {
+  border: solid 4px black;
+  background-color: lightgray;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--light-green);
+  border-top: solid 2px var(--bistre);
+}

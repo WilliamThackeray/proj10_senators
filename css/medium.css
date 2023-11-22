@@ -1,0 +1,7 @@
+@media only screen and (min-width: 35rem) {
+
+  #people figure {
+    flex-basis: 40%;
+  }  
+
+} /* end media query*/
